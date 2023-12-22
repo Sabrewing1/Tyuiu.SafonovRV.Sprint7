@@ -29,12 +29,14 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             Application.Exit();
         }
 
-        private void aboutProgramToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        
+
+        private void buttonAdd_KUE_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Данное приложение является средством для работы с базами данных.", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            dataGridViewTable_KUE.Rows.Add();
         }
 
-        private void buttonOpen_KUE_Click(object sender, EventArgs e)
+        private void openToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
             openFileDialogTable_KUE.ShowDialog();
             openFilePath = openFileDialogTable_KUE.FileName;
@@ -43,16 +45,22 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             dataGridViewTable_KUE.ColumnCount = cols = arrayValues.GetLength(1);
             dataGridViewTable_KUE.RowCount = rows = arrayValues.GetLength(0);
 
-            for (int i = 0; i < rows; i++)
+            for (int i = 0; i < cols; i++)
             {
-                for (int j = 0; j < cols - 1; j++)
+                dataGridViewTable_KUE.Columns[i].Name = arrayValues[0, i];
+            }
+
+
+            for (int i = 1; i < rows; i++)
+            {
+                for (int j = 0; j < cols  ; j++)
                 {
-                    dataGridViewTable_KUE.Rows[i].Cells[j].Value = arrayValues[i, j];
+                    dataGridViewTable_KUE[j, i - 1].Value = arrayValues[i, j];
                 }
             }
         }
 
-        private void buttonDownload_KUE_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
             saveFileDialogTable_KUE.FileName = "OutPutFileTask7.csv";
             saveFileDialogTable_KUE.InitialDirectory = Directory.GetCurrentDirectory();
@@ -69,35 +77,77 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
             int rows = dataGridViewTable_KUE.RowCount;
             int columns = dataGridViewTable_KUE.ColumnCount;
-            string str = "";
+            string header = "";
+            for (int j = 0; j < columns; j++)
+            {
+                if (j != columns - 1)
+                {
+                    header += dataGridViewTable_KUE.Columns[j].HeaderText + ";";
+                }
+                else
+                {
+                    header += dataGridViewTable_KUE.Columns[j].HeaderText;
+                }
+            }
+            File.AppendAllText(path, header + Environment.NewLine, Encoding.UTF8);
+
 
             for (int i = 0; i < rows; i++)
             {
+                string str = "";
                 for (int j = 0; j < columns; j++)
                 {
+
                     if (j != columns - 1)
                     {
-                        str = str + dataGridViewTable_KUE.Rows[i].Cells[j].Value + ";";
+                        str += dataGridViewTable_KUE.Rows[i].Cells[j].Value + ";";
                     }
                     else
                     {
-                        str = str + dataGridViewTable_KUE.Rows[i].Cells[j].Value;
+                        str += dataGridViewTable_KUE.Rows[i].Cells[j].Value;
                     }
                 }
-
-                File.AppendAllText(path, str + Environment.NewLine);
-                str = "";
+                File.AppendAllText(path, str + Environment.NewLine, Encoding.UTF8);
             }
         }
 
-        private void buttonAdd_KUE_Click(object sender, EventArgs e)
+        private void AddRowsToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
             dataGridViewTable_KUE.Rows.Add();
         }
 
-        private void buttonInfo_KUE_Click(object sender, EventArgs e)
+        private void AddColumnsToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
 
+            FormWriteText formWriteText = new FormWriteText();
+            formWriteText.ShowDialog();
+
+            DataGridViewColumn column = new DataGridViewTextBoxColumn();// инициализируем колонку
+            column.DataPropertyName = "Name";//имя
+            column.Name = DataService.Text; //заголовок колонки
+            dataGridViewTable_KUE.Columns.Add(column);
+
+
+        }
+
+        private void CloseTableToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            this.dataGridViewTable_KUE.DataSource = null;
+            this.dataGridViewTable_KUE.Rows.Clear();
+            this.dataGridViewTable_KUE.Columns.Clear();
+
+        }
+
+        private void developerToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            FormAboutDeveloper formAboutDeveloper = new FormAboutDeveloper();
+            formAboutDeveloper.ShowDialog();
+        }
+
+        private void руководствоПользователяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormManual formManual = new FormManual();
+            formManual.ShowDialog();
         }
 
         private void dataGridViewTable_KUE_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)

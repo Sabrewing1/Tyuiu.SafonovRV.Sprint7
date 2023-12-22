@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.IO;
+using System.Data;
 
 namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
 {
@@ -29,5 +30,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
             }
             return arrayValues;
         }
+        public static string Text = "1";
+
     }
 }
