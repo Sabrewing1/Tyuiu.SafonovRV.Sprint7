@@ -113,7 +113,14 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
         private void AddRowsToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            dataGridViewTable_KUE.Rows.Add();
+            if (dataGridViewTable_KUE.Columns.Count == 0) 
+            { 
+                MessageBox.Show("Сначала добавьте столбцы!", "Сообщение!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                dataGridViewTable_KUE.Rows.Add();
+            }
         }
 
         private void AddColumnsToolStripMenuItem_KUE_Click(object sender, EventArgs e)
@@ -132,7 +139,6 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
         private void CloseTableToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            this.dataGridViewTable_KUE.DataSource = null;
             this.dataGridViewTable_KUE.Rows.Clear();
             this.dataGridViewTable_KUE.Columns.Clear();
 
@@ -144,19 +150,80 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             formAboutDeveloper.ShowDialog();
         }
 
-        private void руководствоПользователяToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RemoveRowToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewTable_KUE.CurrentRow != null)
+            {
+                dataGridViewTable_KUE.Rows.Remove(dataGridViewTable_KUE.CurrentRow);
+            }
+        }
+
+        private void RemoveColumnToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            int CellCount = dataGridViewTable_KUE.Columns.Count - 1;
+            dataGridViewTable_KUE.Columns.Remove(dataGridViewTable_KUE.Columns[CellCount]);
+        }
+
+        private void DohodToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnDohod_KUE.Text);
+
+            toolStripTextBoxInputColumnDohod_KUE.Clear();
+
+            // Создаем массив для хранения данных из столбца
+            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
+
+            // Используем цикл для записи данных из столбца в массив
+            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            {
+                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+            }
+
+
+            int res = ds.SummDohod(columnData);
+            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+        }
+
+        private void MINSumToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMIN_KUE.Text);
+
+            toolStripTextBoxInputColumnMIN_KUE.Clear();
+
+            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
+
+            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            {
+                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+            }
+
+            int res = ds.MinDohod(columnData);
+            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+        }
+
+        private void MAXSumToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMAX_KUE.Text);
+
+            toolStripTextBoxInputColumnMAX_KUE.Clear();
+
+            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
+
+            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            {
+                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+            }
+
+            int res = ds.MaxDohod(columnData);
+            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+        }
+
+        private void ManualToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormManual formManual = new FormManual();
             formManual.ShowDialog();
         }
 
-        private void dataGridViewTable_KUE_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
-        {
-            int index = e.RowIndex;
-            string indexStr = (index + 1).ToString();
-            object header = this.dataGridViewTable_KUE.Rows[index].HeaderCell.Value;
-            if (header == null || !header.Equals(indexStr))
-                this.dataGridViewTable_KUE.Rows[index].HeaderCell.Value = indexStr;
-        }
+        
     }
 }

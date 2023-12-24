@@ -37,18 +37,25 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.addToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.AddRowsToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.AddColumnsToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
+            this.RemoveToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
+            this.RemoveRowToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
+            this.RemoveColumnToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseTableToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutProgramToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.developerToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
-            this.руководствоПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ManualToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridViewTable_KUE = new System.Windows.Forms.DataGridView();
-            this.saveFileDialogTable_KUE = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialogTable_KUE = new System.Windows.Forms.OpenFileDialog();
             this.CalculationToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.MAXSumToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.MINSumToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.DohodToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewTable_KUE = new System.Windows.Forms.DataGridView();
+            this.saveFileDialogTable_KUE = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialogTable_KUE = new System.Windows.Forms.OpenFileDialog();
+            this.toolStripTextBoxInputColumnDohod_KUE = new System.Windows.Forms.ToolStripTextBox();
+            this.textBoxOutPutData_KUE = new System.Windows.Forms.TextBox();
+            this.toolStripTextBoxInputColumnMIN_KUE = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripTextBoxInputColumnMAX_KUE = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip_KUE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable_KUE)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +81,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.openToolStripMenuItem_KUE,
             this.saveToolStripMenuItem_KUE,
             this.addToolStripMenuItem_KUE,
+            this.RemoveToolStripMenuItem_KUE,
             this.CloseTableToolStripMenuItem_KUE});
             this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
             this.действияToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
@@ -116,6 +124,29 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.AddColumnsToolStripMenuItem_KUE.Text = "Столбец";
             this.AddColumnsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddColumnsToolStripMenuItem_KUE_Click);
             // 
+            // RemoveToolStripMenuItem_KUE
+            // 
+            this.RemoveToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RemoveRowToolStripMenuItem_KUE,
+            this.RemoveColumnToolStripMenuItem_KUE});
+            this.RemoveToolStripMenuItem_KUE.Name = "RemoveToolStripMenuItem_KUE";
+            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveToolStripMenuItem_KUE.Text = "Удалить";
+            // 
+            // RemoveRowToolStripMenuItem_KUE
+            // 
+            this.RemoveRowToolStripMenuItem_KUE.Name = "RemoveRowToolStripMenuItem_KUE";
+            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveRowToolStripMenuItem_KUE.Text = "Строку";
+            this.RemoveRowToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveRowToolStripMenuItem_KUE_Click);
+            // 
+            // RemoveColumnToolStripMenuItem_KUE
+            // 
+            this.RemoveColumnToolStripMenuItem_KUE.Name = "RemoveColumnToolStripMenuItem_KUE";
+            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveColumnToolStripMenuItem_KUE.Text = "Столбец";
+            this.RemoveColumnToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveColumnToolStripMenuItem_KUE_Click);
+            // 
             // CloseTableToolStripMenuItem_KUE
             // 
             this.CloseTableToolStripMenuItem_KUE.Name = "CloseTableToolStripMenuItem_KUE";
@@ -127,7 +158,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             this.aboutProgramToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.developerToolStripMenuItem_KUE,
-            this.руководствоПользователяToolStripMenuItem});
+            this.ManualToolStripMenuItem_KUE});
             this.aboutProgramToolStripMenuItem_KUE.Name = "aboutProgramToolStripMenuItem_KUE";
             this.aboutProgramToolStripMenuItem_KUE.Size = new System.Drawing.Size(94, 20);
             this.aboutProgramToolStripMenuItem_KUE.Text = "О программе";
@@ -139,12 +170,12 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.developerToolStripMenuItem_KUE.Text = "Разработчик";
             this.developerToolStripMenuItem_KUE.Click += new System.EventHandler(this.developerToolStripMenuItem_KUE_Click);
             // 
-            // руководствоПользователяToolStripMenuItem
+            // ManualToolStripMenuItem_KUE
             // 
-            this.руководствоПользователяToolStripMenuItem.Name = "руководствоПользователяToolStripMenuItem";
-            this.руководствоПользователяToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.руководствоПользователяToolStripMenuItem.Text = "Руководство пользователя";
-            this.руководствоПользователяToolStripMenuItem.Click += new System.EventHandler(this.руководствоПользователяToolStripMenuItem_Click);
+            this.ManualToolStripMenuItem_KUE.Name = "ManualToolStripMenuItem_KUE";
+            this.ManualToolStripMenuItem_KUE.Size = new System.Drawing.Size(221, 22);
+            this.ManualToolStripMenuItem_KUE.Text = "Руководство пользователя";
+            this.ManualToolStripMenuItem_KUE.Click += new System.EventHandler(this.ManualToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem_KUE
             // 
@@ -152,6 +183,43 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.exitToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
             this.exitToolStripMenuItem_KUE.Text = "Выход";
             this.exitToolStripMenuItem_KUE.Click += new System.EventHandler(this.exitToolStripMenuItem_KUE_Click);
+            // 
+            // CalculationToolStripMenuItem_KUE
+            // 
+            this.CalculationToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MAXSumToolStripMenuItem_KUE,
+            this.MINSumToolStripMenuItem_KUE,
+            this.DohodToolStripMenuItem_KUE});
+            this.CalculationToolStripMenuItem_KUE.Name = "CalculationToolStripMenuItem_KUE";
+            this.CalculationToolStripMenuItem_KUE.Size = new System.Drawing.Size(88, 20);
+            this.CalculationToolStripMenuItem_KUE.Text = "Вычисления";
+            // 
+            // MAXSumToolStripMenuItem_KUE
+            // 
+            this.MAXSumToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBoxInputColumnMAX_KUE});
+            this.MAXSumToolStripMenuItem_KUE.Name = "MAXSumToolStripMenuItem_KUE";
+            this.MAXSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.MAXSumToolStripMenuItem_KUE.Text = "Максимальная сумма договора";
+            this.MAXSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MAXSumToolStripMenuItem_KUE_Click);
+            // 
+            // MINSumToolStripMenuItem_KUE
+            // 
+            this.MINSumToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBoxInputColumnMIN_KUE});
+            this.MINSumToolStripMenuItem_KUE.Name = "MINSumToolStripMenuItem_KUE";
+            this.MINSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.MINSumToolStripMenuItem_KUE.Text = "Минимальная сумма договора";
+            this.MINSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MINSumToolStripMenuItem_KUE_Click);
+            // 
+            // DohodToolStripMenuItem_KUE
+            // 
+            this.DohodToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripTextBoxInputColumnDohod_KUE});
+            this.DohodToolStripMenuItem_KUE.Name = "DohodToolStripMenuItem_KUE";
+            this.DohodToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.DohodToolStripMenuItem_KUE.Text = "Доход";
+            this.DohodToolStripMenuItem_KUE.Click += new System.EventHandler(this.DohodToolStripMenuItem_KUE_Click);
             // 
             // dataGridViewTable_KUE
             // 
@@ -169,45 +237,42 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.dataGridViewTable_KUE.RowTemplate.Height = 24;
             this.dataGridViewTable_KUE.Size = new System.Drawing.Size(658, 364);
             this.dataGridViewTable_KUE.TabIndex = 1;
-            this.dataGridViewTable_KUE.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridViewTable_KUE_RowPrePaint);
             // 
             // openFileDialogTable_KUE
             // 
             this.openFileDialogTable_KUE.FileName = "openFileDialog1";
             // 
-            // CalculationToolStripMenuItem_KUE
+            // toolStripTextBoxInputColumnDohod_KUE
             // 
-            this.CalculationToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MAXSumToolStripMenuItem_KUE,
-            this.MINSumToolStripMenuItem_KUE,
-            this.DohodToolStripMenuItem_KUE});
-            this.CalculationToolStripMenuItem_KUE.Name = "CalculationToolStripMenuItem_KUE";
-            this.CalculationToolStripMenuItem_KUE.Size = new System.Drawing.Size(88, 20);
-            this.CalculationToolStripMenuItem_KUE.Text = "Вычисления";
+            this.toolStripTextBoxInputColumnDohod_KUE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBoxInputColumnDohod_KUE.Name = "toolStripTextBoxInputColumnDohod_KUE";
+            this.toolStripTextBoxInputColumnDohod_KUE.Size = new System.Drawing.Size(100, 23);
             // 
-            // MAXSumToolStripMenuItem_KUE
+            // textBoxOutPutData_KUE
             // 
-            this.MAXSumToolStripMenuItem_KUE.Name = "MAXSumToolStripMenuItem_KUE";
-            this.MAXSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
-            this.MAXSumToolStripMenuItem_KUE.Text = "Максимальная сумма договора";
+            this.textBoxOutPutData_KUE.Location = new System.Drawing.Point(673, 25);
+            this.textBoxOutPutData_KUE.Name = "textBoxOutPutData_KUE";
+            this.textBoxOutPutData_KUE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOutPutData_KUE.TabIndex = 2;
             // 
-            // MINSumToolStripMenuItem_KUE
+            // toolStripTextBoxInputColumnMIN_KUE
             // 
-            this.MINSumToolStripMenuItem_KUE.Name = "MINSumToolStripMenuItem_KUE";
-            this.MINSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
-            this.MINSumToolStripMenuItem_KUE.Text = "Минимальная сумма договора";
+            this.toolStripTextBoxInputColumnMIN_KUE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBoxInputColumnMIN_KUE.Name = "toolStripTextBoxInputColumnMIN_KUE";
+            this.toolStripTextBoxInputColumnMIN_KUE.Size = new System.Drawing.Size(100, 23);
             // 
-            // DohodToolStripMenuItem_KUE
+            // toolStripTextBoxInputColumnMAX_KUE
             // 
-            this.DohodToolStripMenuItem_KUE.Name = "DohodToolStripMenuItem_KUE";
-            this.DohodToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
-            this.DohodToolStripMenuItem_KUE.Text = "Доход";
+            this.toolStripTextBoxInputColumnMAX_KUE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBoxInputColumnMAX_KUE.Name = "toolStripTextBoxInputColumnMAX_KUE";
+            this.toolStripTextBoxInputColumnMAX_KUE.Size = new System.Drawing.Size(100, 23);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 399);
+            this.Controls.Add(this.textBoxOutPutData_KUE);
             this.Controls.Add(this.dataGridViewTable_KUE);
             this.Controls.Add(this.menuStrip_KUE);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -240,11 +305,18 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
         private System.Windows.Forms.ToolStripMenuItem AddColumnsToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem CloseTableToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem developerToolStripMenuItem_KUE;
-        private System.Windows.Forms.ToolStripMenuItem руководствоПользователяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ManualToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem CalculationToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem MAXSumToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem MINSumToolStripMenuItem_KUE;
         private System.Windows.Forms.ToolStripMenuItem DohodToolStripMenuItem_KUE;
+        private System.Windows.Forms.ToolStripMenuItem RemoveToolStripMenuItem_KUE;
+        private System.Windows.Forms.ToolStripMenuItem RemoveRowToolStripMenuItem_KUE;
+        private System.Windows.Forms.ToolStripMenuItem RemoveColumnToolStripMenuItem_KUE;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxInputColumnDohod_KUE;
+        private System.Windows.Forms.TextBox textBoxOutPutData_KUE;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxInputColumnMIN_KUE;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxInputColumnMAX_KUE;
     }
 }
 

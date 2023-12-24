@@ -30,7 +30,43 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
             }
             return arrayValues;
         }
-        public static string Text = "1";
 
+        public static string Text = "";
+
+        public int SummDohod(int[] array)
+        {
+            int res = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                res = res + array[i];
+            }
+            return res;
+        }
+
+        public int MinDohod(int[] array)
+        {
+            int res = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] < res)
+                {
+                    res = array[i];
+                }
+            }
+            return res;
+        }
+
+        public int MaxDohod(int[] array)
+        {
+            int res = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > res)
+                {
+                    res = array[i];
+                }
+            }
+            return res;
+        }
     }
 }
