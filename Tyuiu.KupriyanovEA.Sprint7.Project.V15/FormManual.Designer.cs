@@ -39,10 +39,10 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.pictureBoxudal_KUE = new System.Windows.Forms.PictureBox();
             this.pictureBoxViches_KUE = new System.Windows.Forms.PictureBox();
             this.groupBoxManual = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBoxSearch_KUE = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChart_KUE = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxChart_KUE = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSearch_KUE = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu_KUE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOpen_KUE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSave_KUE)).BeginInit();
@@ -50,9 +50,9 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxudal_KUE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViches_KUE)).BeginInit();
             this.groupBoxManual.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_KUE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChart_KUE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChart_KUE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_KUE)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxManual_KUE
@@ -105,7 +105,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // buttonOK_KUE
             // 
-            this.buttonOK_KUE.Location = new System.Drawing.Point(1190, 537);
+            this.buttonOK_KUE.Location = new System.Drawing.Point(1162, 640);
             this.buttonOK_KUE.Name = "buttonOK_KUE";
             this.buttonOK_KUE.Size = new System.Drawing.Size(87, 27);
             this.buttonOK_KUE.TabIndex = 3;
@@ -143,40 +143,10 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.groupBoxManual.Controls.Add(this.textBoxManual_KUE);
             this.groupBoxManual.Location = new System.Drawing.Point(3, 2);
             this.groupBoxManual.Name = "groupBoxManual";
-            this.groupBoxManual.Size = new System.Drawing.Size(1288, 583);
+            this.groupBoxManual.Size = new System.Drawing.Size(1280, 720);
             this.groupBoxManual.TabIndex = 4;
             this.groupBoxManual.TabStop = false;
             this.groupBoxManual.Text = "Инструкция";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(756, 22);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(526, 561);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            // 
-            // pictureBoxSearch_KUE
-            // 
-            this.pictureBoxSearch_KUE.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearch_KUE.Image")));
-            this.pictureBoxSearch_KUE.Location = new System.Drawing.Point(1070, 162);
-            this.pictureBoxSearch_KUE.Name = "pictureBoxSearch_KUE";
-            this.pictureBoxSearch_KUE.Size = new System.Drawing.Size(159, 29);
-            this.pictureBoxSearch_KUE.TabIndex = 2;
-            this.pictureBoxSearch_KUE.TabStop = false;
-            // 
-            // pictureBoxChart_KUE
-            // 
-            this.pictureBoxChart_KUE.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxChart_KUE.Image")));
-            this.pictureBoxChart_KUE.Location = new System.Drawing.Point(756, 73);
-            this.pictureBoxChart_KUE.Name = "pictureBoxChart_KUE";
-            this.pictureBoxChart_KUE.Size = new System.Drawing.Size(411, 60);
-            this.pictureBoxChart_KUE.TabIndex = 2;
-            this.pictureBoxChart_KUE.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -187,11 +157,41 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBoxChart_KUE
+            // 
+            this.pictureBoxChart_KUE.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxChart_KUE.Image")));
+            this.pictureBoxChart_KUE.Location = new System.Drawing.Point(756, 73);
+            this.pictureBoxChart_KUE.Name = "pictureBoxChart_KUE";
+            this.pictureBoxChart_KUE.Size = new System.Drawing.Size(411, 60);
+            this.pictureBoxChart_KUE.TabIndex = 2;
+            this.pictureBoxChart_KUE.TabStop = false;
+            // 
+            // pictureBoxSearch_KUE
+            // 
+            this.pictureBoxSearch_KUE.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearch_KUE.Image")));
+            this.pictureBoxSearch_KUE.Location = new System.Drawing.Point(896, 173);
+            this.pictureBoxSearch_KUE.Name = "pictureBoxSearch_KUE";
+            this.pictureBoxSearch_KUE.Size = new System.Drawing.Size(159, 29);
+            this.pictureBoxSearch_KUE.TabIndex = 2;
+            this.pictureBoxSearch_KUE.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(756, 22);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(509, 561);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
             // FormManual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1292, 576);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pictureBoxADD_KUE);
             this.Controls.Add(this.pictureBoxudal_KUE);
             this.Controls.Add(this.pictureBoxSave_KUE);
@@ -213,9 +213,9 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxViches_KUE)).EndInit();
             this.groupBoxManual.ResumeLayout(false);
             this.groupBoxManual.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_KUE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChart_KUE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChart_KUE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_KUE)).EndInit();
             this.ResumeLayout(false);
 
         }
