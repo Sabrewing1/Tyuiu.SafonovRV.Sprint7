@@ -29,13 +29,6 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             Application.Exit();
         }
 
-        
-
-        private void buttonAdd_KUE_Click(object sender, EventArgs e)
-        {
-            dataGridViewTable_KUE.Rows.Add();
-        }
-
         private void openToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
             openFileDialogTable_KUE.ShowDialog();
@@ -166,56 +159,178 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
         private void DohodToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnDohod_KUE.Text);
-
-            toolStripTextBoxInputColumnDohod_KUE.Clear();
-
-            // Создаем массив для хранения данных из столбца
-            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
-
-            // Используем цикл для записи данных из столбца в массив
-            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            try
             {
-                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+                int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnDohod_KUE.Text);
+
+                toolStripTextBoxInputColumnDohod_KUE.Clear();
+
+                // Создаем массив для хранения данных из столбца
+                double[] columnData = new double[dataGridViewTable_KUE.Rows.Count];
+
+                // Используем цикл для записи данных из столбца в массив
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToDouble(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+                }
+
+                double res = ds.SummDohod(columnData);
+                textBoxOutPutData_KUE.Text = Convert.ToString(res);
             }
-
-
-            int res = ds.SummDohod(columnData);
-            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+            catch
+            {
+                MessageBox.Show("Сначала введите номер столбца в раскрывающемся поле операции!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void MINSumToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMIN_KUE.Text);
-
-            toolStripTextBoxInputColumnMIN_KUE.Clear();
-
-            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
-
-            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            try
             {
-                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
-            }
+                int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMIN_KUE.Text);
 
-            int res = ds.MinDohod(columnData);
-            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+                toolStripTextBoxInputColumnMIN_KUE.Clear();
+
+                double[] columnData = new double[dataGridViewTable_KUE.Rows.Count];
+
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToDouble(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+                }
+
+                double res = ds.MinDohod(columnData);
+                textBoxOutPutData_KUE.Text = Convert.ToString(res);
+            }
+            catch
+            {
+                MessageBox.Show("Сначала введите номер столбца в раскрывающемся поле операции!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void MAXSumToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMAX_KUE.Text);
-
-            toolStripTextBoxInputColumnMAX_KUE.Clear();
-
-            int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
-
-            for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+            try
             {
-                columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
-            }
+                int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnMAX_KUE.Text);
 
-            int res = ds.MaxDohod(columnData);
-            textBoxOutPutData_KUE.Text = Convert.ToString(res);
+                toolStripTextBoxInputColumnMAX_KUE.Clear();
+
+                double[] columnData = new double[dataGridViewTable_KUE.Rows.Count];
+
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+                }
+
+                double res = ds.MaxDohod(columnData);
+                textBoxOutPutData_KUE.Text = Convert.ToString(res);
+            }
+            catch
+            {
+                MessageBox.Show("Сначала введите номер столбца в раскрывающемся поле операции!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void AverageValueToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int columnIndex = Convert.ToInt32(toolStripTextBoxInputColumnAverageValue_KUE.Text);
+
+                toolStripTextBoxInputColumnAverageValue_KUE.Clear();
+
+                double[] columnData = new double[dataGridViewTable_KUE.Rows.Count];
+
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[columnIndex].Value);
+                }
+
+                double res = ds.AverageValue(columnData);
+                textBoxOutPutData_KUE.Text = Convert.ToString(res);
+            }
+            catch
+            {
+                MessageBox.Show("Сначала введите номер столбца в раскрывающемся поле операции!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void CountDocumentToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int[] columnData = new int[dataGridViewTable_KUE.Rows.Count];
+
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToInt32(dataGridViewTable_KUE.Rows[i].Cells[0].Value);
+                }
+
+                int res = ds.CountDocument(columnData);
+                textBoxOutPutData_KUE.Text = Convert.ToString(res);
+            }
+            catch
+            {
+                MessageBox.Show("Что-то пошло не так!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BuildChartToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int columnIndexName = Convert.ToInt32(toolStripTextBoxInputColumnForChartName_KUE.Text);
+                toolStripTextBoxInputColumnForChartName_KUE.Clear();
+
+                string[] columnDataName = new string[dataGridViewTable_KUE.Rows.Count];
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnDataName[i] = Convert.ToString(dataGridViewTable_KUE.Rows[i].Cells[columnIndexName].Value);
+                }
+
+                //
+
+                int columnIndexData = Convert.ToInt32(toolStripTextBoxInputColumnForChartData_KUE.Text);
+                toolStripTextBoxInputColumnForChartData_KUE.Clear();
+
+                double[] columnData = new double[dataGridViewTable_KUE.Rows.Count];
+                for (int i = 0; i < dataGridViewTable_KUE.Rows.Count; i++)
+                {
+                    columnData[i] = Convert.ToDouble(dataGridViewTable_KUE.Rows[i].Cells[columnIndexData].Value);
+                }
+
+                DataService.ArrayData = columnData;
+                DataService.ArrayName = columnDataName;
+
+                FormChart formChart = new FormChart();
+                formChart.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Что-то пошло не так!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void SearchToolStripMenuItem_KUE_Click(object sender, EventArgs e)
+        {
+            if (toolStripTextBoxSearch_KUE != null)
+            {
+                string currentText = toolStripTextBoxSearch_KUE.Text;
+                foreach (DataGridViewRow row in dataGridViewTable_KUE.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value != null && toolStripTextBoxSearch_KUE.Text != string.Empty && cell.Value.ToString().Contains(toolStripTextBoxSearch_KUE.Text))
+                        {
+                            cell.Style.BackColor = Color.Yellow;
+                        }
+                        else
+                        {
+                            cell.Style.BackColor = Color.White;
+                        }
+                    }
+                }
+            }
         }
 
         private void ManualToolStripMenuItem_Click(object sender, EventArgs e)

@@ -42,7 +42,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.textBoxLabelColumn_KUE.Location = new System.Drawing.Point(0, 0);
             this.textBoxLabelColumn_KUE.Name = "textBoxLabelColumn_KUE";
             this.textBoxLabelColumn_KUE.ReadOnly = true;
-            this.textBoxLabelColumn_KUE.Size = new System.Drawing.Size(234, 22);
+            this.textBoxLabelColumn_KUE.Size = new System.Drawing.Size(273, 22);
             this.textBoxLabelColumn_KUE.TabIndex = 0;
             this.textBoxLabelColumn_KUE.TabStop = false;
             this.textBoxLabelColumn_KUE.Text = "Введите название столбца";
@@ -52,18 +52,17 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             this.textBoxInputLabelColumn_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxInputLabelColumn_KUE.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxInputLabelColumn_KUE.Location = new System.Drawing.Point(12, 28);
-            this.textBoxInputLabelColumn_KUE.Multiline = true;
+            this.textBoxInputLabelColumn_KUE.Location = new System.Drawing.Point(16, 38);
             this.textBoxInputLabelColumn_KUE.Name = "textBoxInputLabelColumn_KUE";
-            this.textBoxInputLabelColumn_KUE.Size = new System.Drawing.Size(210, 45);
+            this.textBoxInputLabelColumn_KUE.Size = new System.Drawing.Size(245, 18);
             this.textBoxInputLabelColumn_KUE.TabIndex = 1;
             this.textBoxInputLabelColumn_KUE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonOK_KUE
             // 
-            this.buttonOK_KUE.Location = new System.Drawing.Point(147, 79);
+            this.buttonOK_KUE.Location = new System.Drawing.Point(174, 71);
             this.buttonOK_KUE.Name = "buttonOK_KUE";
-            this.buttonOK_KUE.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK_KUE.Size = new System.Drawing.Size(87, 27);
             this.buttonOK_KUE.TabIndex = 2;
             this.buttonOK_KUE.Text = "OK";
             this.buttonOK_KUE.UseVisualStyleBackColor = true;
@@ -71,12 +70,13 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // FormWriteText
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 105);
+            this.ClientSize = new System.Drawing.Size(273, 104);
             this.Controls.Add(this.buttonOK_KUE);
             this.Controls.Add(this.textBoxInputLabelColumn_KUE);
             this.Controls.Add(this.textBoxLabelColumn_KUE);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "FormWriteText";

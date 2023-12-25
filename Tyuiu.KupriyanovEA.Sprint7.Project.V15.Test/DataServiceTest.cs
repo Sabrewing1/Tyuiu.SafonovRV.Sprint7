@@ -13,27 +13,45 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Test
         [TestMethod]
         public void SummDohod()
         {
-            int[] array = { 1, 2, 3 };
-            int res = ds.SummDohod(array);
-            int wait = 6;
+            double[] array = { 1, 2, 3 };
+            double res = ds.SummDohod(array);
+            double wait = 6;
             Assert.AreEqual(wait, res);
         }
 
         [TestMethod]
         public void MinDohod()
         {
-            int[] array = { 12, 2, 3, 1 };
-            int res = ds.MinDohod(array);
-            int wait = 1;
+            double[] array = { 12, 2, 3, 1 };
+            double res = ds.MinDohod(array);
+            double wait = 1;
             Assert.AreEqual(wait, res);
         }
 
         [TestMethod]
         public void MaxDohod()
         {
-            int[] array = { 12, 2, 3, 1 };
-            int res = ds.MaxDohod(array);
-            int wait = 12;
+            double[] array = { 12, 2, 3, 1 };
+            double res = ds.MaxDohod(array);
+            double wait = 12;
+            Assert.AreEqual(wait, res);
+        }
+
+        [TestMethod]
+        public void AverageValue()
+        {
+            double[] array = { 2, 3, 1 };
+            double res = ds.AverageValue(array);
+            double wait = 2;
+            Assert.AreEqual(wait, res);
+        }
+
+        [TestMethod]
+        public void CountDocument()
+        {
+            int[] array = { 2, 3, 1 };
+            int res = ds.CountDocument(array);
+            double wait = 3;
             Assert.AreEqual(wait, res);
         }
     }

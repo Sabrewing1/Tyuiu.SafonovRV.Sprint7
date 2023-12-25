@@ -33,19 +33,23 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
 
         public static string Text = "";
 
-        public int SummDohod(int[] array)
+        public static double[] ArrayData { get; set; }
+
+        public static string[] ArrayName { get; set; }
+
+        public double SummDohod(double[] array)
         {
-            int res = 0;
+            double res = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 res = res + array[i];
             }
-            return res;
+            return Math.Round(res, 3);
         }
 
-        public int MinDohod(int[] array)
+        public double MinDohod(double[] array)
         {
-            int res = array[0];
+            double res = array[0];
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] < res)
@@ -53,12 +57,12 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
                     res = array[i];
                 }
             }
-            return res;
+            return Math.Round(res, 3);
         }
 
-        public int MaxDohod(int[] array)
+        public double MaxDohod(double[] array)
         {
-            int res = array[0];
+            double res = array[0];
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] > res)
@@ -66,7 +70,29 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
                     res = array[i];
                 }
             }
-            return res;
+            return Math.Round(res, 3);
+        }
+
+        public double AverageValue(double[] array)
+        {
+            double res = 0;
+            double result = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                res = res + array[i];
+            }
+            result = res / array.Length;
+            return Math.Round(result, 3);
+        }
+
+        public int CountDocument(int[] array)
+        {
+            int count = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                count++;
+            }
+            return count;
         }
     }
 }

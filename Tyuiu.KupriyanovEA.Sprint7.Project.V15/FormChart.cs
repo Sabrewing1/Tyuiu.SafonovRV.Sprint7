@@ -12,19 +12,20 @@ using Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib;
 
 namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 {
-    public partial class FormWriteText : Form
+    public partial class FormChart : Form
     {
-        public FormWriteText()
+        public FormChart()
         {
             InitializeComponent();
         }
 
-        DataService ds = new DataService();
 
-        private void buttonOK_KUE_Click(object sender, EventArgs e)
+        private void FormChart_Load(object sender, EventArgs e)
         {
-            DataService.Text = textBoxInputLabelColumn_KUE.Text;
-            this.Close();
+            string[] arrayname = DataService.ArrayName;
+            double[] arraydata = DataService.ArrayData;
+
+            this.chartDiagremma_KUE.Series[0].Points.DataBindXY(arrayname, arraydata);
         }
     }
 }
