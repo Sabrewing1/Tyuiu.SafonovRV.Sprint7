@@ -51,6 +51,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
                     dataGridViewTable_KUE[j, i - 1].Value = arrayValues[i, j];
                 }
             }
+
         }
 
         private void saveToolStripMenuItem_KUE_Click(object sender, EventArgs e)
@@ -329,6 +330,23 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
                             cell.Style.BackColor = Color.White;
                         }
                     }
+                }
+            }
+        }
+
+        private void buttonUseFilter_KUE_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow r in dataGridViewTable_KUE.Rows)
+            {
+                if ((r.Cells[comboBoxColumnForFilter_KUE.SelectedIndex].Value).ToString().ToUpper().Contains(textBoxInputFilter_KUE.Text.ToUpper()))
+                {
+                    dataGridViewTable_KUE.Rows[r.Index].Visible = true;
+                    dataGridViewTable_KUE.Rows[r.Index].Selected = true;
+                }
+                else
+                {
+                    dataGridViewTable_KUE.CurrentCell = null;
+                    dataGridViewTable_KUE.Rows[r.Index].Visible = false;
                 }
             }
         }

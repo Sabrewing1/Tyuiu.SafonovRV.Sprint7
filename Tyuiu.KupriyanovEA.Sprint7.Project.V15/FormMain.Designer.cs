@@ -66,6 +66,11 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.SearchToolStripMenuItem_KUE = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_KUE = new System.Windows.Forms.MenuStrip();
             this.comboBoxColumnForFilter_KUE = new System.Windows.Forms.ComboBox();
+            this.labelInputS_KUE = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxInputFilter_KUE = new System.Windows.Forms.TextBox();
+            this.buttonUseFilter_KUE = new System.Windows.Forms.Button();
+            this.LabelFiltr_KUE = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable_KUE)).BeginInit();
             this.menuStrip_KUE.SuspendLayout();
             this.SuspendLayout();
@@ -129,14 +134,14 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // openToolStripMenuItem_KUE
             // 
             this.openToolStripMenuItem_KUE.Name = "openToolStripMenuItem_KUE";
-            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
             this.openToolStripMenuItem_KUE.Text = "Открыть";
             this.openToolStripMenuItem_KUE.Click += new System.EventHandler(this.openToolStripMenuItem_KUE_Click);
             // 
             // saveToolStripMenuItem_KUE
             // 
             this.saveToolStripMenuItem_KUE.Name = "saveToolStripMenuItem_KUE";
-            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
             this.saveToolStripMenuItem_KUE.Text = "Сохранить";
             this.saveToolStripMenuItem_KUE.Click += new System.EventHandler(this.saveToolStripMenuItem_KUE_Click);
             // 
@@ -146,7 +151,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.AddRowsToolStripMenuItem_KUE,
             this.AddColumnsToolStripMenuItem_KUE});
             this.addToolStripMenuItem_KUE.Name = "addToolStripMenuItem_KUE";
-            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
             this.addToolStripMenuItem_KUE.Text = "Добавить";
             // 
             // AddRowsToolStripMenuItem_KUE
@@ -169,7 +174,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.RemoveRowToolStripMenuItem_KUE,
             this.RemoveColumnToolStripMenuItem_KUE});
             this.RemoveToolStripMenuItem_KUE.Name = "RemoveToolStripMenuItem_KUE";
-            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
             this.RemoveToolStripMenuItem_KUE.Text = "Удалить";
             // 
             // RemoveRowToolStripMenuItem_KUE
@@ -189,7 +194,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // CloseTableToolStripMenuItem_KUE
             // 
             this.CloseTableToolStripMenuItem_KUE.Name = "CloseTableToolStripMenuItem_KUE";
-            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
             this.CloseTableToolStripMenuItem_KUE.Text = "Закрыть таблицу";
             this.CloseTableToolStripMenuItem_KUE.Click += new System.EventHandler(this.CloseTableToolStripMenuItem_KUE_Click);
             // 
@@ -343,9 +348,9 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             this.menuStrip_KUE.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip_KUE.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem_KUE,
             this.действияToolStripMenuItem,
             this.aboutProgramToolStripMenuItem_KUE,
-            this.exitToolStripMenuItem_KUE,
             this.CalculationToolStripMenuItem_KUE,
             this.toolStripTextBoxSearch_KUE,
             this.SearchToolStripMenuItem_KUE});
@@ -358,20 +363,89 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // comboBoxColumnForFilter_KUE
             // 
-            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxColumnForFilter_KUE.FormattingEnabled = true;
-            this.comboBoxColumnForFilter_KUE.Location = new System.Drawing.Point(1088, 70);
+            this.comboBoxColumnForFilter_KUE.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBoxColumnForFilter_KUE.Location = new System.Drawing.Point(1088, 107);
             this.comboBoxColumnForFilter_KUE.Name = "comboBoxColumnForFilter_KUE";
             this.comboBoxColumnForFilter_KUE.Size = new System.Drawing.Size(121, 23);
             this.comboBoxColumnForFilter_KUE.TabIndex = 4;
+            // 
+            // labelInputS_KUE
+            // 
+            this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelInputS_KUE.AutoSize = true;
+            this.labelInputS_KUE.Location = new System.Drawing.Point(1085, 89);
+            this.labelInputS_KUE.Name = "labelInputS_KUE";
+            this.labelInputS_KUE.Size = new System.Drawing.Size(109, 15);
+            this.labelInputS_KUE.TabIndex = 5;
+            this.labelInputS_KUE.Text = "Выберите столбец";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1085, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Напишите слово";
+            // 
+            // textBoxInputFilter_KUE
+            // 
+            this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxInputFilter_KUE.Location = new System.Drawing.Point(1088, 156);
+            this.textBoxInputFilter_KUE.Name = "textBoxInputFilter_KUE";
+            this.textBoxInputFilter_KUE.Size = new System.Drawing.Size(121, 23);
+            this.textBoxInputFilter_KUE.TabIndex = 7;
+            // 
+            // buttonUseFilter_KUE
+            // 
+            this.buttonUseFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonUseFilter_KUE.Location = new System.Drawing.Point(1088, 186);
+            this.buttonUseFilter_KUE.Name = "buttonUseFilter_KUE";
+            this.buttonUseFilter_KUE.Size = new System.Drawing.Size(121, 27);
+            this.buttonUseFilter_KUE.TabIndex = 8;
+            this.buttonUseFilter_KUE.Text = "Выполнить";
+            this.buttonUseFilter_KUE.UseVisualStyleBackColor = true;
+            this.buttonUseFilter_KUE.Click += new System.EventHandler(this.buttonUseFilter_KUE_Click);
+            // 
+            // LabelFiltr_KUE
+            // 
+            this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelFiltr_KUE.AutoSize = true;
+            this.LabelFiltr_KUE.Location = new System.Drawing.Point(1085, 67);
+            this.LabelFiltr_KUE.Name = "LabelFiltr_KUE";
+            this.LabelFiltr_KUE.Size = new System.Drawing.Size(48, 15);
+            this.LabelFiltr_KUE.TabIndex = 5;
+            this.LabelFiltr_KUE.Text = "Фильтр";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.buttonUseFilter_KUE);
+            this.Controls.Add(this.textBoxInputFilter_KUE);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelFiltr_KUE);
+            this.Controls.Add(this.labelInputS_KUE);
             this.Controls.Add(this.comboBoxColumnForFilter_KUE);
             this.Controls.Add(this.labelOutPutData_KUE);
             this.Controls.Add(this.textBoxOutPutData_KUE);
@@ -430,6 +504,11 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
         private System.Windows.Forms.ToolStripMenuItem SearchToolStripMenuItem_KUE;
         private System.Windows.Forms.MenuStrip menuStrip_KUE;
         private System.Windows.Forms.ComboBox comboBoxColumnForFilter_KUE;
+        private System.Windows.Forms.Label labelInputS_KUE;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxInputFilter_KUE;
+        private System.Windows.Forms.Button buttonUseFilter_KUE;
+        private System.Windows.Forms.Label LabelFiltr_KUE;
     }
 }
 
