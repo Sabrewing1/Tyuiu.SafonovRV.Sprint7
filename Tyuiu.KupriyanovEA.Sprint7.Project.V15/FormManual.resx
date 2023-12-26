@@ -143,7 +143,31 @@
 
 
 
-3.При выполнении вычислений вводится номер столбца в открывающемся контекстном меню, счёт столбцов начинается от нуля:</value>
+3.При выполнении вычислений вводится номер столбца в открывающемся контекстном меню, счёт столбцов начинается от нуля:
+
+
+
+
+
+
+
+
+
+
+
+4.При построении графика в первом окне раскрывающегося меню вводится номер столбца, отвечающего за названия. Во втором окне вводится номер столбца, отвечающего за данные, по которым строится график.
+
+
+
+
+
+
+5.Для посика по таблице введите в полле перед кнопкой поиск слово или значение и нажмите поиск, найденный элемент выделится жёлтым цветом.
+
+
+
+6.Для активации фильтра выберите столбец(счёт начинается с нуля), введите слово и нажмите кнопку выполнить.
+</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxMenu_KUE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -679,20 +703,6 @@
         t1cN2FD2R1e6fwN76SK6FGz8HJ+L59VH1I3rxSfgXo1gjU2O7z0hOFoRrLFBoM4OwdGKYI0NAnV2CI5W
         BGtsEKizQ3C0KoL9htCXwOpDcLQiWFYMwdGKYFkxBEcrgmXFEBytmmmahDErESwz1CQ/WIeOHsPi5YkA
         AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>4.При построении графика в первом окне раскрывающегося меню вводится номер столбца, отвечающего за названия. Во втором окне вводится номер столбца, отвечающего за данные, по которым строится график.
-
-
-
-
-
-5.Для посика по таблице введите в полле перед кнопкой поиск слово или значение и нажмите поиск, найденный элемент выделится жёлтым цветом.
-
-
-6.Для активации фильтра выберите столбец(счёт начинается с нуля), введите слово и нажмите кнопку выполнить.
-
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

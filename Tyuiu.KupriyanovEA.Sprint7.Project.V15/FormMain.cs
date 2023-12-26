@@ -31,77 +31,90 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
         private void openToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            openFileDialogTable_KUE.ShowDialog();
-            openFilePath = openFileDialogTable_KUE.FileName;
-
-            string[,] arrayValues = ds.LoadFromFileData(openFilePath);
-            dataGridViewTable_KUE.ColumnCount = cols = arrayValues.GetLength(1);
-            dataGridViewTable_KUE.RowCount = rows = arrayValues.GetLength(0);
-
-            for (int i = 0; i < cols; i++)
+            try
             {
-                dataGridViewTable_KUE.Columns[i].Name = arrayValues[0, i];
-            }
+                openFileDialogTable_KUE.ShowDialog();
+                openFilePath = openFileDialogTable_KUE.FileName;
 
+                string[,] arrayValues = ds.LoadFromFileData(openFilePath);
+                dataGridViewTable_KUE.ColumnCount = cols = arrayValues.GetLength(1);
+                dataGridViewTable_KUE.RowCount = rows = arrayValues.GetLength(0);
 
-            for (int i = 1; i < rows; i++)
-            {
-                for (int j = 0; j < cols  ; j++)
+                for (int i = 0; i < cols; i++)
                 {
-                    dataGridViewTable_KUE[j, i - 1].Value = arrayValues[i, j];
+                    dataGridViewTable_KUE.Columns[i].Name = arrayValues[0, i];
+                }
+
+
+                for (int i = 1; i < rows; i++)
+                {
+                    for (int j = 0; j < cols; j++)
+                    {
+                        dataGridViewTable_KUE[j, i - 1].Value = arrayValues[i, j];
+                    }
                 }
             }
-
+            catch
+            {
+                MessageBox.Show("Вы не выбрали файл!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void saveToolStripMenuItem_KUE_Click(object sender, EventArgs e)
         {
-            saveFileDialogTable_KUE.FileName = "OutPutFileTask7.csv";
-            saveFileDialogTable_KUE.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialogTable_KUE.ShowDialog();
-
-            string path = saveFileDialogTable_KUE.FileName;
-
-            FileInfo fileInfo = new FileInfo(path);
-            bool fileExists = fileInfo.Exists;
-            if (fileExists)
+            try
             {
-                File.Delete(path);
-            }
+                saveFileDialogTable_KUE.FileName = "DataBase.csv";
+                saveFileDialogTable_KUE.InitialDirectory = Directory.GetCurrentDirectory();
+                saveFileDialogTable_KUE.ShowDialog();
 
-            int rows = dataGridViewTable_KUE.RowCount;
-            int columns = dataGridViewTable_KUE.ColumnCount;
-            string header = "";
-            for (int j = 0; j < columns; j++)
-            {
-                if (j != columns - 1)
+                string path = saveFileDialogTable_KUE.FileName;
+
+                FileInfo fileInfo = new FileInfo(path);
+                bool fileExists = fileInfo.Exists;
+                if (fileExists)
                 {
-                    header += dataGridViewTable_KUE.Columns[j].HeaderText + ";";
+                    File.Delete(path);
                 }
-                else
-                {
-                    header += dataGridViewTable_KUE.Columns[j].HeaderText;
-                }
-            }
-            File.AppendAllText(path, header + Environment.NewLine, Encoding.UTF8);
 
-
-            for (int i = 0; i < rows; i++)
-            {
-                string str = "";
+                int rows = dataGridViewTable_KUE.RowCount;
+                int columns = dataGridViewTable_KUE.ColumnCount;
+                string header = "";
                 for (int j = 0; j < columns; j++)
                 {
-
                     if (j != columns - 1)
                     {
-                        str += dataGridViewTable_KUE.Rows[i].Cells[j].Value + ";";
+                        header += dataGridViewTable_KUE.Columns[j].HeaderText + ";";
                     }
                     else
                     {
-                        str += dataGridViewTable_KUE.Rows[i].Cells[j].Value;
+                        header += dataGridViewTable_KUE.Columns[j].HeaderText;
                     }
                 }
-                File.AppendAllText(path, str + Environment.NewLine, Encoding.UTF8);
+                File.AppendAllText(path, header + Environment.NewLine, Encoding.UTF8);
+
+
+                for (int i = 0; i < rows; i++)
+                {
+                    string str = "";
+                    for (int j = 0; j < columns; j++)
+                    {
+
+                        if (j != columns - 1)
+                        {
+                            str += dataGridViewTable_KUE.Rows[i].Cells[j].Value + ";";
+                        }
+                        else
+                        {
+                            str += dataGridViewTable_KUE.Rows[i].Cells[j].Value;
+                        }
+                    }
+                    File.AppendAllText(path, str + Environment.NewLine, Encoding.UTF8);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то пошло не так.", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -336,25 +349,32 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
 
         private void buttonUseFilter_KUE_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow r in dataGridViewTable_KUE.Rows)
+            try
             {
-                if ((r.Cells[comboBoxColumnForFilter_KUE.SelectedIndex].Value).ToString().ToUpper().Contains(textBoxInputFilter_KUE.Text.ToUpper()))
+                foreach (DataGridViewRow r in dataGridViewTable_KUE.Rows)
                 {
-                    dataGridViewTable_KUE.Rows[r.Index].Visible = true;
-                    dataGridViewTable_KUE.Rows[r.Index].Selected = true;
+                    if ((r.Cells[comboBoxColumnForFilter_KUE.SelectedIndex].Value).ToString().ToUpper().Contains(textBoxInputFilter_KUE.Text.ToUpper()))
+                    {
+                        dataGridViewTable_KUE.Rows[r.Index].Visible = true;
+                        dataGridViewTable_KUE.Rows[r.Index].Selected = true;
+                    }
+                    else
+                    {
+                        dataGridViewTable_KUE.CurrentCell = null;
+                        dataGridViewTable_KUE.Rows[r.Index].Visible = false;
+                    }
                 }
-                else
-                {
-                    dataGridViewTable_KUE.CurrentCell = null;
-                    dataGridViewTable_KUE.Rows[r.Index].Visible = false;
-                }
+            }
+            catch
+            {
+                MessageBox.Show("Что-то пошло не так!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ManualToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormManual formManual = new FormManual();
-            formManual.ShowDialog();
+            formManual.Show();
         }
 
         

@@ -29,6 +29,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.dataGridViewTable_KUE = new System.Windows.Forms.DataGridView();
             this.saveFileDialogTable_KUE = new System.Windows.Forms.SaveFileDialog();
@@ -71,6 +72,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.textBoxInputFilter_KUE = new System.Windows.Forms.TextBox();
             this.buttonUseFilter_KUE = new System.Windows.Forms.Button();
             this.LabelFiltr_KUE = new System.Windows.Forms.Label();
+            this.toolTip_KUE = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable_KUE)).BeginInit();
             this.menuStrip_KUE.SuspendLayout();
             this.SuspendLayout();
@@ -130,19 +132,22 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
             this.действияToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.действияToolStripMenuItem.Text = "Действия";
+            this.действияToolStripMenuItem.ToolTipText = "Меню базы данных";
             // 
             // openToolStripMenuItem_KUE
             // 
             this.openToolStripMenuItem_KUE.Name = "openToolStripMenuItem_KUE";
-            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
+            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem_KUE.Text = "Открыть";
+            this.openToolStripMenuItem_KUE.ToolTipText = "Нажмите и выберите базу данных";
             this.openToolStripMenuItem_KUE.Click += new System.EventHandler(this.openToolStripMenuItem_KUE_Click);
             // 
             // saveToolStripMenuItem_KUE
             // 
             this.saveToolStripMenuItem_KUE.Name = "saveToolStripMenuItem_KUE";
-            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
+            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem_KUE.Text = "Сохранить";
+            this.saveToolStripMenuItem_KUE.ToolTipText = "Нажмите и сохраните базу данных";
             this.saveToolStripMenuItem_KUE.Click += new System.EventHandler(this.saveToolStripMenuItem_KUE_Click);
             // 
             // addToolStripMenuItem_KUE
@@ -151,21 +156,24 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.AddRowsToolStripMenuItem_KUE,
             this.AddColumnsToolStripMenuItem_KUE});
             this.addToolStripMenuItem_KUE.Name = "addToolStripMenuItem_KUE";
-            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
+            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.addToolStripMenuItem_KUE.Text = "Добавить";
+            this.addToolStripMenuItem_KUE.ToolTipText = "Добавление строки или столбца";
             // 
             // AddRowsToolStripMenuItem_KUE
             // 
             this.AddRowsToolStripMenuItem_KUE.Name = "AddRowsToolStripMenuItem_KUE";
-            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.AddRowsToolStripMenuItem_KUE.Text = "Строку";
+            this.AddRowsToolStripMenuItem_KUE.ToolTipText = "Добавится строка";
             this.AddRowsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddRowsToolStripMenuItem_KUE_Click);
             // 
             // AddColumnsToolStripMenuItem_KUE
             // 
             this.AddColumnsToolStripMenuItem_KUE.Name = "AddColumnsToolStripMenuItem_KUE";
-            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.AddColumnsToolStripMenuItem_KUE.Text = "Столбец";
+            this.AddColumnsToolStripMenuItem_KUE.ToolTipText = "Добавится столбец";
             this.AddColumnsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddColumnsToolStripMenuItem_KUE_Click);
             // 
             // RemoveToolStripMenuItem_KUE
@@ -174,28 +182,32 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.RemoveRowToolStripMenuItem_KUE,
             this.RemoveColumnToolStripMenuItem_KUE});
             this.RemoveToolStripMenuItem_KUE.Name = "RemoveToolStripMenuItem_KUE";
-            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
+            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.RemoveToolStripMenuItem_KUE.Text = "Удалить";
+            this.RemoveToolStripMenuItem_KUE.ToolTipText = "Удалить строку или столбец";
             // 
             // RemoveRowToolStripMenuItem_KUE
             // 
             this.RemoveRowToolStripMenuItem_KUE.Name = "RemoveRowToolStripMenuItem_KUE";
-            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.RemoveRowToolStripMenuItem_KUE.Text = "Строку";
+            this.RemoveRowToolStripMenuItem_KUE.ToolTipText = "Удалиться выделенная строка";
             this.RemoveRowToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveRowToolStripMenuItem_KUE_Click);
             // 
             // RemoveColumnToolStripMenuItem_KUE
             // 
             this.RemoveColumnToolStripMenuItem_KUE.Name = "RemoveColumnToolStripMenuItem_KUE";
-            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.RemoveColumnToolStripMenuItem_KUE.Text = "Столбец";
+            this.RemoveColumnToolStripMenuItem_KUE.ToolTipText = "удалиться последний столбец";
             this.RemoveColumnToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveColumnToolStripMenuItem_KUE_Click);
             // 
             // CloseTableToolStripMenuItem_KUE
             // 
             this.CloseTableToolStripMenuItem_KUE.Name = "CloseTableToolStripMenuItem_KUE";
-            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(168, 22);
+            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
             this.CloseTableToolStripMenuItem_KUE.Text = "Закрыть таблицу";
+            this.CloseTableToolStripMenuItem_KUE.ToolTipText = "Закрыть таблицу без сохранения";
             this.CloseTableToolStripMenuItem_KUE.Click += new System.EventHandler(this.CloseTableToolStripMenuItem_KUE_Click);
             // 
             // aboutProgramToolStripMenuItem_KUE
@@ -212,6 +224,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.developerToolStripMenuItem_KUE.Name = "developerToolStripMenuItem_KUE";
             this.developerToolStripMenuItem_KUE.Size = new System.Drawing.Size(221, 22);
             this.developerToolStripMenuItem_KUE.Text = "Разработчик";
+            this.developerToolStripMenuItem_KUE.ToolTipText = "Информация о разработчике";
             this.developerToolStripMenuItem_KUE.Click += new System.EventHandler(this.developerToolStripMenuItem_KUE_Click);
             // 
             // ManualToolStripMenuItem_KUE
@@ -219,6 +232,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.ManualToolStripMenuItem_KUE.Name = "ManualToolStripMenuItem_KUE";
             this.ManualToolStripMenuItem_KUE.Size = new System.Drawing.Size(221, 22);
             this.ManualToolStripMenuItem_KUE.Text = "Руководство пользователя";
+            this.ManualToolStripMenuItem_KUE.ToolTipText = "Откроется краткое руководство пользователя";
             this.ManualToolStripMenuItem_KUE.Click += new System.EventHandler(this.ManualToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem_KUE
@@ -226,6 +240,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.exitToolStripMenuItem_KUE.Name = "exitToolStripMenuItem_KUE";
             this.exitToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
             this.exitToolStripMenuItem_KUE.Text = "Выход";
+            this.exitToolStripMenuItem_KUE.ToolTipText = "Выход из приложения";
             this.exitToolStripMenuItem_KUE.Click += new System.EventHandler(this.exitToolStripMenuItem_KUE_Click);
             // 
             // CalculationToolStripMenuItem_KUE
@@ -248,6 +263,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.MAXSumToolStripMenuItem_KUE.Name = "MAXSumToolStripMenuItem_KUE";
             this.MAXSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.MAXSumToolStripMenuItem_KUE.Text = "Максимальная сумма договора";
+            this.MAXSumToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.MAXSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MAXSumToolStripMenuItem_KUE_Click);
             // 
             // toolStripTextBoxInputColumnMAX_KUE
@@ -263,6 +279,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.MINSumToolStripMenuItem_KUE.Name = "MINSumToolStripMenuItem_KUE";
             this.MINSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.MINSumToolStripMenuItem_KUE.Text = "Минимальная сумма договора";
+            this.MINSumToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.MINSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MINSumToolStripMenuItem_KUE_Click);
             // 
             // toolStripTextBoxInputColumnMIN_KUE
@@ -278,6 +295,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.DohodToolStripMenuItem_KUE.Name = "DohodToolStripMenuItem_KUE";
             this.DohodToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.DohodToolStripMenuItem_KUE.Text = "Доход";
+            this.DohodToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.DohodToolStripMenuItem_KUE.Click += new System.EventHandler(this.DohodToolStripMenuItem_KUE_Click);
             // 
             // toolStripTextBoxInputColumnDohod_KUE
@@ -293,6 +311,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.AverageValueToolStripMenuItem_KUE.Name = "AverageValueToolStripMenuItem_KUE";
             this.AverageValueToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.AverageValueToolStripMenuItem_KUE.Text = "Среднее значение ";
+            this.AverageValueToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.AverageValueToolStripMenuItem_KUE.Click += new System.EventHandler(this.AverageValueToolStripMenuItem_KUE_Click);
             // 
             // toolStripTextBoxInputColumnAverageValue_KUE
@@ -306,6 +325,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.CountDocumentToolStripMenuItem_KUE.Name = "CountDocumentToolStripMenuItem_KUE";
             this.CountDocumentToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.CountDocumentToolStripMenuItem_KUE.Text = "Счётчик договоров";
+            this.CountDocumentToolStripMenuItem_KUE.ToolTipText = "Будет подсчитано количесво договоров";
             this.CountDocumentToolStripMenuItem_KUE.Click += new System.EventHandler(this.CountDocumentToolStripMenuItem_KUE_Click);
             // 
             // BuildChartToolStripMenuItem_KUE
@@ -316,6 +336,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.BuildChartToolStripMenuItem_KUE.Name = "BuildChartToolStripMenuItem_KUE";
             this.BuildChartToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
             this.BuildChartToolStripMenuItem_KUE.Text = "Построить диаграмму доходов";
+            this.BuildChartToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.BuildChartToolStripMenuItem_KUE.Click += new System.EventHandler(this.BuildChartToolStripMenuItem_KUE_Click);
             // 
             // toolStripTextBoxInputColumnForChartName_KUE
@@ -323,12 +344,14 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.toolStripTextBoxInputColumnForChartName_KUE.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBoxInputColumnForChartName_KUE.Name = "toolStripTextBoxInputColumnForChartName_KUE";
             this.toolStripTextBoxInputColumnForChartName_KUE.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBoxInputColumnForChartName_KUE.ToolTipText = "Введите номер столбца(счёт начинается с нуля) , в котором указаны названия";
             // 
             // toolStripTextBoxInputColumnForChartData_KUE
             // 
             this.toolStripTextBoxInputColumnForChartData_KUE.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBoxInputColumnForChartData_KUE.Name = "toolStripTextBoxInputColumnForChartData_KUE";
             this.toolStripTextBoxInputColumnForChartData_KUE.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBoxInputColumnForChartData_KUE.ToolTipText = "Введите номер столбца(счёт начинается с нуля) , в котором указаны значения";
             // 
             // toolStripTextBoxSearch_KUE
             // 
@@ -342,6 +365,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.SearchToolStripMenuItem_KUE.Name = "SearchToolStripMenuItem_KUE";
             this.SearchToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
             this.SearchToolStripMenuItem_KUE.Text = "Поиск";
+            this.SearchToolStripMenuItem_KUE.ToolTipText = "Будет выполнен поиск";
             this.SearchToolStripMenuItem_KUE.Click += new System.EventHandler(this.SearchToolStripMenuItem_KUE_Click);
             // 
             // menuStrip_KUE
@@ -382,6 +406,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.comboBoxColumnForFilter_KUE.Name = "comboBoxColumnForFilter_KUE";
             this.comboBoxColumnForFilter_KUE.Size = new System.Drawing.Size(121, 23);
             this.comboBoxColumnForFilter_KUE.TabIndex = 4;
+            this.toolTip_KUE.SetToolTip(this.comboBoxColumnForFilter_KUE, "Выберите столбец, счёт начинается от нуля");
             // 
             // labelInputS_KUE
             // 
@@ -413,6 +438,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.textBoxInputFilter_KUE.Name = "textBoxInputFilter_KUE";
             this.textBoxInputFilter_KUE.Size = new System.Drawing.Size(121, 23);
             this.textBoxInputFilter_KUE.TabIndex = 7;
+            this.toolTip_KUE.SetToolTip(this.textBoxInputFilter_KUE, "Введите ключевое слово");
             // 
             // buttonUseFilter_KUE
             // 
@@ -422,6 +448,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.buttonUseFilter_KUE.Size = new System.Drawing.Size(121, 27);
             this.buttonUseFilter_KUE.TabIndex = 8;
             this.buttonUseFilter_KUE.Text = "Выполнить";
+            this.toolTip_KUE.SetToolTip(this.buttonUseFilter_KUE, "Будет применён фильтр");
             this.buttonUseFilter_KUE.UseVisualStyleBackColor = true;
             this.buttonUseFilter_KUE.Click += new System.EventHandler(this.buttonUseFilter_KUE_Click);
             // 
@@ -435,6 +462,12 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.LabelFiltr_KUE.Size = new System.Drawing.Size(48, 15);
             this.LabelFiltr_KUE.TabIndex = 5;
             this.LabelFiltr_KUE.Text = "Фильтр";
+            // 
+            // toolTip_KUE
+            // 
+            this.toolTip_KUE.Tag = "";
+            this.toolTip_KUE.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_KUE.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
@@ -509,6 +542,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
         private System.Windows.Forms.TextBox textBoxInputFilter_KUE;
         private System.Windows.Forms.Button buttonUseFilter_KUE;
         private System.Windows.Forms.Label LabelFiltr_KUE;
+        private System.Windows.Forms.ToolTip toolTip_KUE;
     }
 }
 
