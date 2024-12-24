@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib;
+using Tyuiu.SafonovRV.Sprint7.Project.V15.Lib;
 
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     public partial class FormWriteText : Form
     {

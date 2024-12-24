@@ -7,8 +7,8 @@
     <ProjectGuid>{0B56543F-44CE-485B-984F-36A110C40EE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib</AssemblyName>
+    <RootNamespace>Tyuiu.SafonovRV.Sprint7.Project.V15.Lib</RootNamespace>
+    <AssemblyName>Tyuiu.SafonovRV.Sprint7.Project.V15.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Data;
 
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15.Lib
 {
     public class DataService
     {

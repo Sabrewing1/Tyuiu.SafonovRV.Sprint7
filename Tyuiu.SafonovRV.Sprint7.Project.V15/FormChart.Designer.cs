@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     partial class FormChart
     {
@@ -40,8 +40,8 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // chartDiagremma_KUE
             // 
-            this.chartDiagremma_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.chartDiagremma_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             chartArea1.Name = "ChartArea1";
             this.chartDiagremma_KUE.ChartAreas.Add(chartArea1);

@@ -8,8 +8,8 @@
     <ProjectGuid>{14EFBF7F-73E3-483B-847E-693DC2247392}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.KupriyanovEA.Sprint7.Project.V15.Test</RootNamespace>
-    <AssemblyName>Tyuiu.KupriyanovEA.Sprint7.Project.V15.Test</AssemblyName>
+    <RootNamespace>Tyuiu.SafonovRV.Sprint7.Project.V15.Test</RootNamespace>
+    <AssemblyName>Tyuiu.SafonovRV.Sprint7.Project.V15.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib\Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib.csproj">
+    <ProjectReference Include="..\Tyuiu.SafonovRV.Sprint7.Project.V15.Lib\Tyuiu.SafonovRV.Sprint7.Project.V15.Lib.csproj">
       <Project>{0b56543f-44ce-485b-984f-36a110c40ee9}</Project>
-      <Name>Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib</Name>
+      <Name>Tyuiu.SafonovRV.Sprint7.Project.V15.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

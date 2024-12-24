@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     partial class FormAboutDeveloper
     {
@@ -54,7 +54,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             this.pictureBoxDeveloper.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDeveloper.Image")));
             this.pictureBoxDeveloper.Location = new System.Drawing.Point(14, 14);
             this.pictureBoxDeveloper.Name = "pictureBoxDeveloper";
-            this.pictureBoxDeveloper.Size = new System.Drawing.Size(150, 201);
+            this.pictureBoxDeveloper.Size = new System.Drawing.Size(178, 182);
             this.pictureBoxDeveloper.TabIndex = 4;
             this.pictureBoxDeveloper.TabStop = false;
             // 

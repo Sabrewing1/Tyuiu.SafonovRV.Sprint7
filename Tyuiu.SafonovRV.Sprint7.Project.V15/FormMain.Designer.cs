@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     partial class FormMain
     {
@@ -80,8 +80,8 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // dataGridViewTable_KUE
             // 
             this.dataGridViewTable_KUE.AllowUserToAddRows = false;
-            this.dataGridViewTable_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridViewTable_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewTable_KUE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTable_KUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -100,7 +100,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // textBoxOutPutData_KUE
             // 
-            this.textBoxOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBoxOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxOutPutData_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxOutPutData_KUE.Location = new System.Drawing.Point(1088, 48);
@@ -112,7 +112,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // labelOutPutData_KUE
             // 
-            this.labelOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelOutPutData_KUE.AutoSize = true;
             this.labelOutPutData_KUE.Location = new System.Drawing.Point(1085, 30);
@@ -387,7 +387,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // comboBoxColumnForFilter_KUE
             // 
-            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxColumnForFilter_KUE.FormattingEnabled = true;
             this.comboBoxColumnForFilter_KUE.Items.AddRange(new object[] {
@@ -410,7 +410,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // labelInputS_KUE
             // 
-            this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelInputS_KUE.AutoSize = true;
             this.labelInputS_KUE.Location = new System.Drawing.Point(1085, 89);
@@ -421,7 +421,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(1085, 138);
@@ -432,7 +432,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // textBoxInputFilter_KUE
             // 
-            this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxInputFilter_KUE.Location = new System.Drawing.Point(1088, 156);
             this.textBoxInputFilter_KUE.Name = "textBoxInputFilter_KUE";
@@ -454,7 +454,7 @@ namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
             // 
             // LabelFiltr_KUE
             // 
-            this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelFiltr_KUE.AutoSize = true;
             this.LabelFiltr_KUE.Location = new System.Drawing.Point(1085, 67);

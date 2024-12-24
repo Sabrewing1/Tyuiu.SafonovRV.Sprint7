@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
-    public partial class FormAboutDeveloper : Form
+    public partial class FormManual : Form
     {
-        public FormAboutDeveloper()
+        public FormManual()
         {
             InitializeComponent();
         }
 
-        private void buttonOK_Click(object sender, EventArgs e)
+        private void buttonOK_KUE_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 using System.IO;
 
-using Tyuiu.KupriyanovEA.Sprint7.Project.V15.Lib;
+using Tyuiu.SafonovRV.Sprint7.Project.V15.Lib;
 
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     public partial class FormMain : Form
     {
