@@ -1,5 +1,5 @@
 ﻿
-namespace Tyuiu.KupriyanovEA.Sprint7.Project.V15
+namespace Tyuiu.SafonovRV.Sprint7.Project.V15
 {
     partial class FormManual
     {

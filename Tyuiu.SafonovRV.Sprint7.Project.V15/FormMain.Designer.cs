@@ -73,6 +73,8 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.buttonUseFilter_KUE = new System.Windows.Forms.Button();
             this.LabelFiltr_KUE = new System.Windows.Forms.Label();
             this.toolTip_KUE = new System.Windows.Forms.ToolTip(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable_KUE)).BeginInit();
             this.menuStrip_KUE.SuspendLayout();
             this.SuspendLayout();
@@ -80,18 +82,18 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // dataGridViewTable_KUE
             // 
             this.dataGridViewTable_KUE.AllowUserToAddRows = false;
-            this.dataGridViewTable_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dataGridViewTable_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewTable_KUE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTable_KUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTable_KUE.Location = new System.Drawing.Point(11, 30);
+            this.dataGridViewTable_KUE.Location = new System.Drawing.Point(11, 51);
             this.dataGridViewTable_KUE.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewTable_KUE.Name = "dataGridViewTable_KUE";
             this.dataGridViewTable_KUE.RowHeadersVisible = false;
             this.dataGridViewTable_KUE.RowHeadersWidth = 51;
             this.dataGridViewTable_KUE.RowTemplate.Height = 24;
-            this.dataGridViewTable_KUE.Size = new System.Drawing.Size(1069, 640);
+            this.dataGridViewTable_KUE.Size = new System.Drawing.Size(1069, 570);
             this.dataGridViewTable_KUE.TabIndex = 1;
             // 
             // openFileDialogTable_KUE
@@ -100,8 +102,9 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // textBoxOutPutData_KUE
             // 
-            this.textBoxOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.textBoxOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxOutPutData_KUE.BackColor = System.Drawing.Color.Purple;
             this.textBoxOutPutData_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxOutPutData_KUE.Location = new System.Drawing.Point(1088, 48);
             this.textBoxOutPutData_KUE.Name = "textBoxOutPutData_KUE";
@@ -112,7 +115,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // labelOutPutData_KUE
             // 
-            this.labelOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.labelOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelOutPutData_KUE.AutoSize = true;
             this.labelOutPutData_KUE.Location = new System.Drawing.Point(1085, 30);
@@ -163,7 +166,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // AddRowsToolStripMenuItem_KUE
             // 
             this.AddRowsToolStripMenuItem_KUE.Name = "AddRowsToolStripMenuItem_KUE";
-            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
             this.AddRowsToolStripMenuItem_KUE.Text = "Строку";
             this.AddRowsToolStripMenuItem_KUE.ToolTipText = "Добавится строка";
             this.AddRowsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddRowsToolStripMenuItem_KUE_Click);
@@ -171,7 +174,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // AddColumnsToolStripMenuItem_KUE
             // 
             this.AddColumnsToolStripMenuItem_KUE.Name = "AddColumnsToolStripMenuItem_KUE";
-            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
             this.AddColumnsToolStripMenuItem_KUE.Text = "Столбец";
             this.AddColumnsToolStripMenuItem_KUE.ToolTipText = "Добавится столбец";
             this.AddColumnsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddColumnsToolStripMenuItem_KUE_Click);
@@ -189,7 +192,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // RemoveRowToolStripMenuItem_KUE
             // 
             this.RemoveRowToolStripMenuItem_KUE.Name = "RemoveRowToolStripMenuItem_KUE";
-            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
             this.RemoveRowToolStripMenuItem_KUE.Text = "Строку";
             this.RemoveRowToolStripMenuItem_KUE.ToolTipText = "Удалиться выделенная строка";
             this.RemoveRowToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveRowToolStripMenuItem_KUE_Click);
@@ -197,7 +200,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // RemoveColumnToolStripMenuItem_KUE
             // 
             this.RemoveColumnToolStripMenuItem_KUE.Name = "RemoveColumnToolStripMenuItem_KUE";
-            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
             this.RemoveColumnToolStripMenuItem_KUE.Text = "Столбец";
             this.RemoveColumnToolStripMenuItem_KUE.ToolTipText = "удалиться последний столбец";
             this.RemoveColumnToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveColumnToolStripMenuItem_KUE_Click);
@@ -237,6 +240,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // exitToolStripMenuItem_KUE
             // 
+            this.exitToolStripMenuItem_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.exitToolStripMenuItem_KUE.Name = "exitToolStripMenuItem_KUE";
             this.exitToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
             this.exitToolStripMenuItem_KUE.Text = "Выход";
@@ -387,7 +391,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // comboBoxColumnForFilter_KUE
             // 
-            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.comboBoxColumnForFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxColumnForFilter_KUE.FormattingEnabled = true;
             this.comboBoxColumnForFilter_KUE.Items.AddRange(new object[] {
@@ -410,7 +414,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // labelInputS_KUE
             // 
-            this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelInputS_KUE.AutoSize = true;
             this.labelInputS_KUE.Location = new System.Drawing.Point(1085, 89);
@@ -421,7 +425,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(1085, 138);
@@ -432,7 +436,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // textBoxInputFilter_KUE
             // 
-            this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxInputFilter_KUE.Location = new System.Drawing.Point(1088, 156);
             this.textBoxInputFilter_KUE.Name = "textBoxInputFilter_KUE";
@@ -454,7 +458,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // LabelFiltr_KUE
             // 
-            this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelFiltr_KUE.AutoSize = true;
             this.LabelFiltr_KUE.Location = new System.Drawing.Point(1085, 67);
@@ -469,11 +473,32 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.toolTip_KUE.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip_KUE.ToolTipTitle = "Подсказка";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1264, 25);
+            this.toolStrip1.TabIndex = 9;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1085, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Результат вычислений";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.buttonUseFilter_KUE);
             this.Controls.Add(this.textBoxInputFilter_KUE);
             this.Controls.Add(this.label1);
@@ -543,6 +568,8 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
         private System.Windows.Forms.Button buttonUseFilter_KUE;
         private System.Windows.Forms.Label LabelFiltr_KUE;
         private System.Windows.Forms.ToolTip toolTip_KUE;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
