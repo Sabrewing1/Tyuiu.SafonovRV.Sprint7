@@ -38,11 +38,11 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             this.textBoxLabelColumn_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxLabelColumn_KUE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxLabelColumn_KUE.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxLabelColumn_KUE.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLabelColumn_KUE.Location = new System.Drawing.Point(0, 0);
             this.textBoxLabelColumn_KUE.Name = "textBoxLabelColumn_KUE";
             this.textBoxLabelColumn_KUE.ReadOnly = true;
-            this.textBoxLabelColumn_KUE.Size = new System.Drawing.Size(273, 22);
+            this.textBoxLabelColumn_KUE.Size = new System.Drawing.Size(273, 24);
             this.textBoxLabelColumn_KUE.TabIndex = 0;
             this.textBoxLabelColumn_KUE.TabStop = false;
             this.textBoxLabelColumn_KUE.Text = "Введите название столбца";
@@ -50,6 +50,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // textBoxInputLabelColumn_KUE
             // 
+            this.textBoxInputLabelColumn_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textBoxInputLabelColumn_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxInputLabelColumn_KUE.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxInputLabelColumn_KUE.Location = new System.Drawing.Point(16, 38);
@@ -60,12 +61,13 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // buttonOK_KUE
             // 
+            this.buttonOK_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonOK_KUE.Location = new System.Drawing.Point(174, 71);
             this.buttonOK_KUE.Name = "buttonOK_KUE";
             this.buttonOK_KUE.Size = new System.Drawing.Size(87, 27);
             this.buttonOK_KUE.TabIndex = 2;
             this.buttonOK_KUE.Text = "OK";
-            this.buttonOK_KUE.UseVisualStyleBackColor = true;
+            this.buttonOK_KUE.UseVisualStyleBackColor = false;
             this.buttonOK_KUE.Click += new System.EventHandler(this.buttonOK_KUE_Click);
             // 
             // FormWriteText
@@ -81,7 +83,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.MaximizeBox = false;
             this.Name = "FormWriteText";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Сообщение";
+            this.Text = "SMS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

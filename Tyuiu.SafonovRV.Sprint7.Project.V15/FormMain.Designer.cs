@@ -86,14 +86,16 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewTable_KUE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTable_KUE.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridViewTable_KUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTable_KUE.GridColor = System.Drawing.SystemColors.Window;
             this.dataGridViewTable_KUE.Location = new System.Drawing.Point(11, 51);
             this.dataGridViewTable_KUE.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewTable_KUE.Name = "dataGridViewTable_KUE";
             this.dataGridViewTable_KUE.RowHeadersVisible = false;
             this.dataGridViewTable_KUE.RowHeadersWidth = 51;
             this.dataGridViewTable_KUE.RowTemplate.Height = 24;
-            this.dataGridViewTable_KUE.Size = new System.Drawing.Size(1069, 570);
+            this.dataGridViewTable_KUE.Size = new System.Drawing.Size(1241, 377);
             this.dataGridViewTable_KUE.TabIndex = 1;
             // 
             // openFileDialogTable_KUE
@@ -104,9 +106,9 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             this.textBoxOutPutData_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxOutPutData_KUE.BackColor = System.Drawing.Color.Purple;
+            this.textBoxOutPutData_KUE.BackColor = System.Drawing.Color.White;
             this.textBoxOutPutData_KUE.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxOutPutData_KUE.Location = new System.Drawing.Point(1088, 48);
+            this.textBoxOutPutData_KUE.Location = new System.Drawing.Point(630, 452);
             this.textBoxOutPutData_KUE.Name = "textBoxOutPutData_KUE";
             this.textBoxOutPutData_KUE.ReadOnly = true;
             this.textBoxOutPutData_KUE.Size = new System.Drawing.Size(129, 16);
@@ -126,21 +128,23 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // действияToolStripMenuItem
             // 
+            this.действияToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.действияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem_KUE,
             this.saveToolStripMenuItem_KUE,
             this.addToolStripMenuItem_KUE,
             this.RemoveToolStripMenuItem_KUE,
             this.CloseTableToolStripMenuItem_KUE});
+            this.действияToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
-            this.действияToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.действияToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.действияToolStripMenuItem.Text = "Действия";
             this.действияToolStripMenuItem.ToolTipText = "Меню базы данных";
             // 
             // openToolStripMenuItem_KUE
             // 
             this.openToolStripMenuItem_KUE.Name = "openToolStripMenuItem_KUE";
-            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem_KUE.Size = new System.Drawing.Size(189, 22);
             this.openToolStripMenuItem_KUE.Text = "Открыть";
             this.openToolStripMenuItem_KUE.ToolTipText = "Нажмите и выберите базу данных";
             this.openToolStripMenuItem_KUE.Click += new System.EventHandler(this.openToolStripMenuItem_KUE_Click);
@@ -148,7 +152,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // saveToolStripMenuItem_KUE
             // 
             this.saveToolStripMenuItem_KUE.Name = "saveToolStripMenuItem_KUE";
-            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem_KUE.Size = new System.Drawing.Size(189, 22);
             this.saveToolStripMenuItem_KUE.Text = "Сохранить";
             this.saveToolStripMenuItem_KUE.ToolTipText = "Нажмите и сохраните базу данных";
             this.saveToolStripMenuItem_KUE.Click += new System.EventHandler(this.saveToolStripMenuItem_KUE_Click);
@@ -159,14 +163,14 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.AddRowsToolStripMenuItem_KUE,
             this.AddColumnsToolStripMenuItem_KUE});
             this.addToolStripMenuItem_KUE.Name = "addToolStripMenuItem_KUE";
-            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem_KUE.Size = new System.Drawing.Size(189, 22);
             this.addToolStripMenuItem_KUE.Text = "Добавить";
             this.addToolStripMenuItem_KUE.ToolTipText = "Добавление строки или столбца";
             // 
             // AddRowsToolStripMenuItem_KUE
             // 
             this.AddRowsToolStripMenuItem_KUE.Name = "AddRowsToolStripMenuItem_KUE";
-            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.AddRowsToolStripMenuItem_KUE.Size = new System.Drawing.Size(131, 22);
             this.AddRowsToolStripMenuItem_KUE.Text = "Строку";
             this.AddRowsToolStripMenuItem_KUE.ToolTipText = "Добавится строка";
             this.AddRowsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddRowsToolStripMenuItem_KUE_Click);
@@ -174,7 +178,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // AddColumnsToolStripMenuItem_KUE
             // 
             this.AddColumnsToolStripMenuItem_KUE.Name = "AddColumnsToolStripMenuItem_KUE";
-            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.AddColumnsToolStripMenuItem_KUE.Size = new System.Drawing.Size(131, 22);
             this.AddColumnsToolStripMenuItem_KUE.Text = "Столбец";
             this.AddColumnsToolStripMenuItem_KUE.ToolTipText = "Добавится столбец";
             this.AddColumnsToolStripMenuItem_KUE.Click += new System.EventHandler(this.AddColumnsToolStripMenuItem_KUE_Click);
@@ -185,14 +189,14 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.RemoveRowToolStripMenuItem_KUE,
             this.RemoveColumnToolStripMenuItem_KUE});
             this.RemoveToolStripMenuItem_KUE.Name = "RemoveToolStripMenuItem_KUE";
-            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.RemoveToolStripMenuItem_KUE.Size = new System.Drawing.Size(189, 22);
             this.RemoveToolStripMenuItem_KUE.Text = "Удалить";
             this.RemoveToolStripMenuItem_KUE.ToolTipText = "Удалить строку или столбец";
             // 
             // RemoveRowToolStripMenuItem_KUE
             // 
             this.RemoveRowToolStripMenuItem_KUE.Name = "RemoveRowToolStripMenuItem_KUE";
-            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.RemoveRowToolStripMenuItem_KUE.Size = new System.Drawing.Size(131, 22);
             this.RemoveRowToolStripMenuItem_KUE.Text = "Строку";
             this.RemoveRowToolStripMenuItem_KUE.ToolTipText = "Удалиться выделенная строка";
             this.RemoveRowToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveRowToolStripMenuItem_KUE_Click);
@@ -200,7 +204,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // RemoveColumnToolStripMenuItem_KUE
             // 
             this.RemoveColumnToolStripMenuItem_KUE.Name = "RemoveColumnToolStripMenuItem_KUE";
-            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(121, 22);
+            this.RemoveColumnToolStripMenuItem_KUE.Size = new System.Drawing.Size(131, 22);
             this.RemoveColumnToolStripMenuItem_KUE.Text = "Столбец";
             this.RemoveColumnToolStripMenuItem_KUE.ToolTipText = "удалиться последний столбец";
             this.RemoveColumnToolStripMenuItem_KUE.Click += new System.EventHandler(this.RemoveColumnToolStripMenuItem_KUE_Click);
@@ -208,24 +212,26 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // CloseTableToolStripMenuItem_KUE
             // 
             this.CloseTableToolStripMenuItem_KUE.Name = "CloseTableToolStripMenuItem_KUE";
-            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(180, 22);
+            this.CloseTableToolStripMenuItem_KUE.Size = new System.Drawing.Size(189, 22);
             this.CloseTableToolStripMenuItem_KUE.Text = "Закрыть таблицу";
             this.CloseTableToolStripMenuItem_KUE.ToolTipText = "Закрыть таблицу без сохранения";
             this.CloseTableToolStripMenuItem_KUE.Click += new System.EventHandler(this.CloseTableToolStripMenuItem_KUE_Click);
             // 
             // aboutProgramToolStripMenuItem_KUE
             // 
+            this.aboutProgramToolStripMenuItem_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.aboutProgramToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.developerToolStripMenuItem_KUE,
             this.ManualToolStripMenuItem_KUE});
+            this.aboutProgramToolStripMenuItem_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutProgramToolStripMenuItem_KUE.Name = "aboutProgramToolStripMenuItem_KUE";
-            this.aboutProgramToolStripMenuItem_KUE.Size = new System.Drawing.Size(94, 20);
+            this.aboutProgramToolStripMenuItem_KUE.Size = new System.Drawing.Size(106, 20);
             this.aboutProgramToolStripMenuItem_KUE.Text = "О программе";
             // 
             // developerToolStripMenuItem_KUE
             // 
             this.developerToolStripMenuItem_KUE.Name = "developerToolStripMenuItem_KUE";
-            this.developerToolStripMenuItem_KUE.Size = new System.Drawing.Size(221, 22);
+            this.developerToolStripMenuItem_KUE.Size = new System.Drawing.Size(257, 22);
             this.developerToolStripMenuItem_KUE.Text = "Разработчик";
             this.developerToolStripMenuItem_KUE.ToolTipText = "Информация о разработчике";
             this.developerToolStripMenuItem_KUE.Click += new System.EventHandler(this.developerToolStripMenuItem_KUE_Click);
@@ -233,22 +239,24 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // ManualToolStripMenuItem_KUE
             // 
             this.ManualToolStripMenuItem_KUE.Name = "ManualToolStripMenuItem_KUE";
-            this.ManualToolStripMenuItem_KUE.Size = new System.Drawing.Size(221, 22);
+            this.ManualToolStripMenuItem_KUE.Size = new System.Drawing.Size(257, 22);
             this.ManualToolStripMenuItem_KUE.Text = "Руководство пользователя";
             this.ManualToolStripMenuItem_KUE.ToolTipText = "Откроется краткое руководство пользователя";
             this.ManualToolStripMenuItem_KUE.Click += new System.EventHandler(this.ManualToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem_KUE
             // 
-            this.exitToolStripMenuItem_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.exitToolStripMenuItem_KUE.BackColor = System.Drawing.Color.GreenYellow;
+            this.exitToolStripMenuItem_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitToolStripMenuItem_KUE.Name = "exitToolStripMenuItem_KUE";
-            this.exitToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
+            this.exitToolStripMenuItem_KUE.Size = new System.Drawing.Size(61, 20);
             this.exitToolStripMenuItem_KUE.Text = "Выход";
             this.exitToolStripMenuItem_KUE.ToolTipText = "Выход из приложения";
             this.exitToolStripMenuItem_KUE.Click += new System.EventHandler(this.exitToolStripMenuItem_KUE_Click);
             // 
             // CalculationToolStripMenuItem_KUE
             // 
+            this.CalculationToolStripMenuItem_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.CalculationToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MAXSumToolStripMenuItem_KUE,
             this.MINSumToolStripMenuItem_KUE,
@@ -256,8 +264,9 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.AverageValueToolStripMenuItem_KUE,
             this.CountDocumentToolStripMenuItem_KUE,
             this.BuildChartToolStripMenuItem_KUE});
+            this.CalculationToolStripMenuItem_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalculationToolStripMenuItem_KUE.Name = "CalculationToolStripMenuItem_KUE";
-            this.CalculationToolStripMenuItem_KUE.Size = new System.Drawing.Size(88, 20);
+            this.CalculationToolStripMenuItem_KUE.Size = new System.Drawing.Size(100, 20);
             this.CalculationToolStripMenuItem_KUE.Text = "Вычисления";
             // 
             // MAXSumToolStripMenuItem_KUE
@@ -265,7 +274,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.MAXSumToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBoxInputColumnMAX_KUE});
             this.MAXSumToolStripMenuItem_KUE.Name = "MAXSumToolStripMenuItem_KUE";
-            this.MAXSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.MAXSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.MAXSumToolStripMenuItem_KUE.Text = "Максимальная сумма договора";
             this.MAXSumToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.MAXSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MAXSumToolStripMenuItem_KUE_Click);
@@ -281,7 +290,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.MINSumToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBoxInputColumnMIN_KUE});
             this.MINSumToolStripMenuItem_KUE.Name = "MINSumToolStripMenuItem_KUE";
-            this.MINSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.MINSumToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.MINSumToolStripMenuItem_KUE.Text = "Минимальная сумма договора";
             this.MINSumToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.MINSumToolStripMenuItem_KUE.Click += new System.EventHandler(this.MINSumToolStripMenuItem_KUE_Click);
@@ -297,7 +306,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.DohodToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBoxInputColumnDohod_KUE});
             this.DohodToolStripMenuItem_KUE.Name = "DohodToolStripMenuItem_KUE";
-            this.DohodToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.DohodToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.DohodToolStripMenuItem_KUE.Text = "Доход";
             this.DohodToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.DohodToolStripMenuItem_KUE.Click += new System.EventHandler(this.DohodToolStripMenuItem_KUE_Click);
@@ -313,7 +322,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.AverageValueToolStripMenuItem_KUE.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripTextBoxInputColumnAverageValue_KUE});
             this.AverageValueToolStripMenuItem_KUE.Name = "AverageValueToolStripMenuItem_KUE";
-            this.AverageValueToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.AverageValueToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.AverageValueToolStripMenuItem_KUE.Text = "Среднее значение ";
             this.AverageValueToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.AverageValueToolStripMenuItem_KUE.Click += new System.EventHandler(this.AverageValueToolStripMenuItem_KUE_Click);
@@ -327,7 +336,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // CountDocumentToolStripMenuItem_KUE
             // 
             this.CountDocumentToolStripMenuItem_KUE.Name = "CountDocumentToolStripMenuItem_KUE";
-            this.CountDocumentToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.CountDocumentToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.CountDocumentToolStripMenuItem_KUE.Text = "Счётчик договоров";
             this.CountDocumentToolStripMenuItem_KUE.ToolTipText = "Будет подсчитано количесво договоров";
             this.CountDocumentToolStripMenuItem_KUE.Click += new System.EventHandler(this.CountDocumentToolStripMenuItem_KUE_Click);
@@ -338,7 +347,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.toolStripTextBoxInputColumnForChartName_KUE,
             this.toolStripTextBoxInputColumnForChartData_KUE});
             this.BuildChartToolStripMenuItem_KUE.Name = "BuildChartToolStripMenuItem_KUE";
-            this.BuildChartToolStripMenuItem_KUE.Size = new System.Drawing.Size(250, 22);
+            this.BuildChartToolStripMenuItem_KUE.Size = new System.Drawing.Size(283, 22);
             this.BuildChartToolStripMenuItem_KUE.Text = "Построить диаграмму доходов";
             this.BuildChartToolStripMenuItem_KUE.ToolTipText = "В контекстном меню введите номер столбца с данными(счет начинается с нуля)";
             this.BuildChartToolStripMenuItem_KUE.Click += new System.EventHandler(this.BuildChartToolStripMenuItem_KUE_Click);
@@ -366,8 +375,11 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // SearchToolStripMenuItem_KUE
             // 
+            this.SearchToolStripMenuItem_KUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.SearchToolStripMenuItem_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchToolStripMenuItem_KUE.ForeColor = System.Drawing.SystemColors.InfoText;
             this.SearchToolStripMenuItem_KUE.Name = "SearchToolStripMenuItem_KUE";
-            this.SearchToolStripMenuItem_KUE.Size = new System.Drawing.Size(54, 20);
+            this.SearchToolStripMenuItem_KUE.Size = new System.Drawing.Size(59, 20);
             this.SearchToolStripMenuItem_KUE.Text = "Поиск";
             this.SearchToolStripMenuItem_KUE.ToolTipText = "Будет выполнен поиск";
             this.SearchToolStripMenuItem_KUE.Click += new System.EventHandler(this.SearchToolStripMenuItem_KUE_Click);
@@ -406,7 +418,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             "8",
             "9",
             "10"});
-            this.comboBoxColumnForFilter_KUE.Location = new System.Drawing.Point(1088, 107);
+            this.comboBoxColumnForFilter_KUE.Location = new System.Drawing.Point(167, 515);
             this.comboBoxColumnForFilter_KUE.Name = "comboBoxColumnForFilter_KUE";
             this.comboBoxColumnForFilter_KUE.Size = new System.Drawing.Size(121, 23);
             this.comboBoxColumnForFilter_KUE.TabIndex = 4;
@@ -417,9 +429,10 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.labelInputS_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelInputS_KUE.AutoSize = true;
-            this.labelInputS_KUE.Location = new System.Drawing.Point(1085, 89);
+            this.labelInputS_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInputS_KUE.Location = new System.Drawing.Point(15, 515);
             this.labelInputS_KUE.Name = "labelInputS_KUE";
-            this.labelInputS_KUE.Size = new System.Drawing.Size(109, 15);
+            this.labelInputS_KUE.Size = new System.Drawing.Size(132, 15);
             this.labelInputS_KUE.TabIndex = 5;
             this.labelInputS_KUE.Text = "Выберите столбец";
             // 
@@ -428,9 +441,10 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1085, 138);
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 449);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 15);
+            this.label1.Size = new System.Drawing.Size(117, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Напишите слово";
             // 
@@ -438,7 +452,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             this.textBoxInputFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxInputFilter_KUE.Location = new System.Drawing.Point(1088, 156);
+            this.textBoxInputFilter_KUE.Location = new System.Drawing.Point(167, 449);
             this.textBoxInputFilter_KUE.Name = "textBoxInputFilter_KUE";
             this.textBoxInputFilter_KUE.Size = new System.Drawing.Size(121, 23);
             this.textBoxInputFilter_KUE.TabIndex = 7;
@@ -447,9 +461,10 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // buttonUseFilter_KUE
             // 
             this.buttonUseFilter_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUseFilter_KUE.Location = new System.Drawing.Point(1088, 186);
+            this.buttonUseFilter_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUseFilter_KUE.Location = new System.Drawing.Point(1131, 632);
             this.buttonUseFilter_KUE.Name = "buttonUseFilter_KUE";
-            this.buttonUseFilter_KUE.Size = new System.Drawing.Size(121, 27);
+            this.buttonUseFilter_KUE.Size = new System.Drawing.Size(121, 37);
             this.buttonUseFilter_KUE.TabIndex = 8;
             this.buttonUseFilter_KUE.Text = "Выполнить";
             this.toolTip_KUE.SetToolTip(this.buttonUseFilter_KUE, "Будет применён фильтр");
@@ -461,9 +476,10 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.LabelFiltr_KUE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelFiltr_KUE.AutoSize = true;
-            this.LabelFiltr_KUE.Location = new System.Drawing.Point(1085, 67);
+            this.LabelFiltr_KUE.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelFiltr_KUE.Location = new System.Drawing.Point(500, 475);
             this.LabelFiltr_KUE.Name = "LabelFiltr_KUE";
-            this.LabelFiltr_KUE.Size = new System.Drawing.Size(48, 15);
+            this.LabelFiltr_KUE.Size = new System.Drawing.Size(59, 15);
             this.LabelFiltr_KUE.TabIndex = 5;
             this.LabelFiltr_KUE.Text = "Фильтр";
             // 
@@ -475,6 +491,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1264, 25);
@@ -486,9 +503,10 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1085, 24);
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(452, 449);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 15);
+            this.label2.Size = new System.Drawing.Size(160, 15);
             this.label2.TabIndex = 10;
             this.label2.Text = "Результат вычислений";
             // 
@@ -496,6 +514,7 @@ namespace Tyuiu.SafonovRV.Sprint7.Project.V15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.toolStrip1);
